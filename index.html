@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMech Pro - Calendrier de rendez-vous</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-car-alt text-3xl"></i>
+                    <h1 class="text-2xl font-bold">AutoCypriano Pro</h1>
+                </div>
+                <!--
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li><a href="#" class="hover:text-blue-200 transition">Accueil</a></li>
+                        <li><a href="#" class="hover:text-blue-200 transition">Services</a></li>
+                        <li><a href="#" class="hover:text-blue-200 transition">Contact</a></li>
+                    </ul>
+                </nav> 
+                -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <!-- index.html (modification du main) -->
+<main class="container mx-auto px-4 py-8 min-h-[calc(100vh-160px)] flex items-center">
+    <div class="max-w-6xl mx-auto w-full">
+        <!-- Title and Description -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Prenez rendez-vous</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Réservez en ligne votre créneau pour une intervention mécanique. Simple, rapide et sécurisé.
+            </p>
+        </div>
+
+        <!-- Modification du conteneur grid -->
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8" id="bookingSteps">
+            <!-- Steps will be loaded by JavaScript -->
+        </div>
+    </div>
+</main>
+
+
+    <!-- Success Modal Container -->
+    <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <!-- Modal content will be loaded by JavaScript -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">AutoCypriano Pro</h3>
+                    <p class="text-gray-400">
+                        Expert en mécanique automobile pour professionnels. Interventions sur mesure pour garages.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone-alt mr-2"></i> 07 67 75 55 66</li>
+                        <li><i class="fas fa-envelope mr-2"></i> contact@automechpro.fr</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 15 Rue de la Croix des Champs, 27940 Le Val D'Hazey</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Horaires</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Lun-Ven: 8h-18h</li>
+                        <li>Samedi: 9h-13h</li>
+                        <li>Dimanche: Fermé</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2024 AutoCypriano Pro. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
